@@ -1,0 +1,30 @@
+{
+  "name": "nodeStudy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon ./index.js",
+    "front":"cd front && npm start",
+    "start":"concurrently --kill-others-on-fail \"npm run server\" \"npm run front concurrently\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kcy230426/node14_app.git"
+  },
+  "keywords": [
+    "노드",
+    "리액트",
+    "SQL"
+  ],
+  "author": "KCY",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.0.1",
+    "path": "^0.12.7"
+  }
+}
